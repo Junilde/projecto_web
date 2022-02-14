@@ -1,0 +1,55 @@
+<%- include ("../include/_header.ejs") %>
+
+<main id="site-main">
+    <div class="container">
+
+        <div class="form-title text-center">
+            <h2 class="text-dark">Cadastro de usúarios</h2>
+        </div>
+        <form  action="/api/usuario" method="POST" id="cadastro">
+           <div class="new_user text-center">
+               <div class="form-group">
+               <label for="nome" class="text-light">Nome</label>
+               <input type="hidden" name="id" value="">
+               <input type="text"class="text-email" name="name" placeholder="Nome">    
+               </div>
+               <div class="form-group">
+                <label for="nome" class="text-light">Apelido</label>
+                <input type="hidden" name="id" value="">
+                <input type="text" class="text-email"name="apelido" placeholder="Apelido">    
+                </div>
+ 
+               <div class="form-group">
+                <label for="email" class="text-light">Email</label>
+                <input type="email" class="text-email" name="email" placeholder="exeplo@gmail.com">    
+                </div>
+                <div class="form-group">
+                  <label for="email" class="text-light">Senha</label>
+                  <input type="password" class="text-email" name="senha">    
+                  </div>
+  
+          
+           <div class="form-group">
+            <label for="sexo" class="text-light">Sexo</label>
+           <div class="radio inline">
+           <input type="radio" id="radio-2" name="genero" value="Femenino">   
+           <label for="radio-2" class="radio-label">Femenino</label>
+           </div>
+           <div class="radio inline">
+            <input type="radio" id="radio-3" name="genero" value="Mascolino">   
+            <label for="radio-3" class="radio-label">Mascolino</label>
+            </div>
+          
+            </div>
+          </div>
+
+                <div class="form-group text-center" >
+                  <button type="submit" class="  btn btn-primary"> Gravar</button> 
+                    </div>
+                </div>
+        </form>
+    </div>
+</main>
+
+<%- include ("../include/_footer.ejs") %>
+

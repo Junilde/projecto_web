@@ -1,0 +1,51 @@
+<%- include ("../include/_header.ejs") %>
+
+    <div class="container">
+
+    <br>
+  
+      <div class="form-title text-center">
+        <div class=" d-flex justify-btween">
+          <a href="/listaDocumento"  class="border-shadow btn btn-success">
+           <span class="text-dark">Listar Documentos <i class="fas fa-list"></i></span>   
+    
+          </a>   
+         </div>
+    <h2 class="text-dark">Registar Documentos</h2></div>  
+    <hr size="10">
+      <form action="/api/documento" method="POST" id="add_documento">
+      <div class="row">
+          <div class="col-md-4">
+              <label for="">Numero do documento</label><br>
+              <input type="text" class="form-control" name="numero" placeholder="Numero do Documento"><br>
+
+          </div>
+          </div>
+     
+         <div class="row">
+
+          <div class="col-md-4">
+            <label for="" >Nome do Titular</label>
+             <input type="text"name="nome_titular" class="form-control" placeholder="Nome do titular"> </div>
+             </div><br>
+             <div class="row">
+              <div class="col-md-4">
+                 <label for="" >Descrição do documento</label><br>
+                  <input type="text"name="descricao" class="form-control" placeholder="descrição do documento"> <br>
+              </div>
+             </div>
+             <div class="row">
+         <div class="col-md-3">
+            <label for="">Local da Perda</label><br>
+            <input type="text"name="local_perda" class="form-control" placeholder="Local aa perda"></div><br>
+
+</div>
+    <br><br>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary" value="enviar">Gravar</button>
+      </div></div>
+    </form> 
+  </div>
+
+
+<%- include ("../include/_footer.ejs") %>

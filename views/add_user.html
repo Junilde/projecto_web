@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kussanga</title>
+    <link href="/assets/css/fontawesome.css" rel="stylesheet">
+  <link href="/projecto_web/assets/css/brands.css" rel="stylesheet">
+  <link href="/assets/css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+ <header id="header">
+     <nav>
+         <div class="Container">
+             <div class="text-center">
+                 <a href="/" class="nav-brand text-dark"></a>
+             </div>
+         </div>
+     </nav>
+
+ </header> 
+<!--main site--> 
+<main id="site-main">
+    <div class="container">
+        <div class=" d-flex justify-btween">
+            <div class="filter">
+
+        
+         <a href="/"><i class="fas-fa-agle-double-left"></i>Usuários</span>   
+
+         </a>   
+        </div>
+        </div>
+  
+        <div class="form-title text-center">
+            <h2 class="text-dark">Novo Usuario</h2>
+            <span class="text-light">Usa o botão para vrear nova conta</span>
+        </div>
+        <form  method="POST" id="update_user" >
+           <div class="new_user">
+               <div class="form-group">
+               <label for="nome" class="text-light">Nome</label>
+               <input type="hidden" name="id" value="">
+               <input type="text" class="" name="nome" placeholder="Nome">    
+               </div>
+
+               <div class="form-group">
+                <label for="email" class="text-light">Email</label>
+                <input type="text" class="" name="email" placeholder="EmailJunild@hotmail">    
+                </div>
+
+          
+           <div class="form-group">
+            <label for="sexo" class="text-light">Sexo</label>
+           <div class="radio inline">
+           <input type="radio" id="radio-2" name="sexo" value="Femenino">   
+           <label for="radio-2" class="radio-label">Femenino</label>
+           </div>
+           <div class="radio inline">
+            <input type="radio" id="radio-3" name="sexo" value="Mascolino">   
+            <label for="radio-3" class="radio-label">Mascolino</label>
+            </div>
+            </div>
+
+
+            <div class="form-group">
+            <label for="sexo" class="text-light">Status</label>
+            <div class="radio inline">
+            <input type="radio" id="radio-4" name="sexo" value="Active">   
+            <label for="radio-4" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+            <input type="radio" id="radio-5" name="sexo" value="Inativo">   
+            <label for="radio-5" class="radio-label">Inativo</label>
+            </div>
+            </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-dark update"> Gravar</button> 
+                    </div>
+                </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kussanga</title>
+    <link href="/assets/css/fontawesome.css" rel="stylesheet">
+  <link href="/projecto_web/assets/css/brands.css" rel="stylesheet">
+  <link href="/assets/css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+ <header id="header">
+     <nav>
+         <div class="Container">
+             <div class="text-center">
+                 <a href="/" class="nav-brand text-dark"></a>
+             </div>
+         </div>
+     </nav>
+
+ </header> 
+<!--main site--> 
+<main id="site-main">
+    <div class="container">
+        <div class=" d-flex justify-btween">
+         <a href="/add-usuario" class="border-shadow">
+          <span class="text-gradient">Novo Usuário <i class="fas-fa-user"></i></span>   
+
+         </a>   
+        </div><br>
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Sexo</th>
+                        <th>Status</th>
+                        <th>Action</th>
+    
+                    </tr>
+    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Julieta</td>
+                        <td>JUnild</td>
+                        <td>Femenino</td>
+                        <td>Activo</td>
+                        <td>
+                            <a href="#" class="btn border-shadow update">
+                            <span class="text-gradient"><i class="fas-fa-pencil-alt"></i></span>
+                            </a>
+                            <a href="#" class="btn border-shadow delete">
+                            <span class="text-gradient"><i class="fas-fa-time"></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+</body>
+</html>

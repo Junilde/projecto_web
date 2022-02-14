@@ -1,0 +1,50 @@
+<%- include ("../include/_header.ejs") %>
+
+<!--main site--> 
+<main id="site-main">
+    <div class="container">
+        <h2 class="text-center text-dark"> GESTÃO DE DOCUMENTOS</h2>
+        <div class=" d-flex justify-btween"> 
+         <a href="/add_documento" class="border-shadow btn btn-success" >
+          <span class="text-dark">Novo Cadastro <i class="fas fa-edit"></i></span>   
+
+         </a>   
+        </div><br>
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nº</th>
+                        <th>Número do Documento</th>
+                        <th>nome do Titular</th>
+                        <th>Descrição do documento</th>
+                        <th>Local da Perda</th>
+                        <th>Action</th>
+    
+                    </tr>
+    
+                </thead>
+                <tbody>
+                    <% for(var i=0;i<documentos.length; i++) {%>
+                    <tr>
+                        <td><%=i+1 %></td>
+                        <td><%=documentos[i].numero %></td>
+                        <td><%=documentos[i].nome_titular %></td>
+                        <td><%=documentos[i].descricao %></td>
+                        <td><%=documentos[i].local_perda %></td>
+                        <td>
+                            <a href="/edit_user?id=<%=documentos[i]._id%>" class="btn border-shadow update">
+                            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                            </a>
+                            <a href="" class="btn border-shadow btn-info">
+                            <span class="text-gradient"><i class="fa-solid fa-info"></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <%} %>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<%- include ("../include/_footer.ejs") %>

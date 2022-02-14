@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ("../partials/header.ejs") %>
+ 
+</head>
+
+<body>
+
+  <%- include ("../partials/nav.ejs") %>
+
+  <div class="container">
+
+    <h2> Registar Outros objectos</h2>
+    <hr size="10">
+      <form action="" method="post">
+
+     <div class="panel-body">
+      <div class="row">
+          <div class="col-md-4">
+              <label for="">Nome do objecto</label><br>
+              <input type="text" class="form-control" name="name"><br>
+
+          </div>
+          </div>
+          <div class="row">
+         <div class="col-md-4">
+            <label for="" >Descrição</label><br>
+             <input type="text"name="" class="form-control" placeholder="descrição"> <br>
+         </div>
+        </div>
+       
+         <div class="row">
+
+          <div class="col-md-4">
+            <label for="" >Local da perda</label><br>
+             <input type="text"name="numero" class="form-control" placeholder="Nome do titular"> </div>
+             </div><br>
+    <br><br>
+      <div class="row">
+        <button type="submit" class="btn btn-primary" name="enviar" value="enviar">Gravar</button>
+      </div></div>
+    </form>
+  </div>
+
+  <%- include ("../partials/footer.ejs") %>
